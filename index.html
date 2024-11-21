@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>主頁</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+
+    <div class="wrap">
+        <!-- 左側放LOGO 中間放選單 右側放社群連結 部落格 FB YT -->
+        <div class="tex">
+            <a href="./index.html"><img src="./img/LOGO.png" alt=""></a>
+            <ul>
+                <li style="border-left:1px solid #fff"><a href="./index.html">關於我</a></li>
+                <li><a href="./portfolio.html">作品集</a></li>
+                <li><a href="./email.html">聯絡我</a></li>
+            </ul>
+        </div>
+        <div class="header">
+            <div class="photo">
+                <img src="./img/LOGO-2.png" alt="">
+            </div>
+            <div class="txt">
+                <h1>灌溉靈感的種子</h1>
+            </div>
+        </div>
+        <!-- 旋轉木馬效果,放類別圖片 並連結至作品集網頁 -->
+        <!-- ACG 童書插畫 平面設計 -->
+        <div class="ph">
+            <h1>作品集</h1>
+            <div class="portfolio">
+                <ul>
+                    <li><img src="./img/banner1.png"" alt="">
+                    </li>
+                    <li><img src="./img/banner2.png" alt=""></li>
+                    <li><img src="./img/banner3.png" alt=""></li>
+                </ul>
+            </div>
+        </div>
+        <script src="./light/js/jquery-1.11.3.min.js"></script>
+        <script src="./light/js/jquery.jcarousellite.min.js"></script>
+        <script>
+            $(function () {
+                $('.portfolio').jCarouselLite({
+                    auto: 1200,
+                    speed: 600,
+                    scroll: 1,
+                    visible: 1,
+                });
+            });
+        </script>
+        <!-- 兩欄式 左邊大頭照 右邊自介-->
+        <div class="mysf">
+            <div class="box1"><img src="./img/head.png" alt=""></div>
+            <div class="box2">
+                <h3>關於我</h3>
+                <h2>蕭喬文</h2>
+                <h3>種子喬</h3>
+                <p>喜歡繽紛的顏色以及豐富的情緒表情，
+                    設計時偏好多彩的顏色與能表現情緒的角色。</br>
+                    喜歡誇張，物件大的視覺表現手法</p>
+            </div>
+
+        </div>
+        <div class="footer">
+            <p>版權所有 &copy; 2024-2025 蕭喬文</p>
+        </div>
+    </div>
+</body>
+
+</html>
